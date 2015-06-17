@@ -1,0 +1,9 @@
+### OSX ###
+.DS_Store
+.AppleDouble
+.LSOverride
+### PHPStorm ###
+/.idea
+/*.iml
+### Composer ###
+/vendor/

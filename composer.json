@@ -1,0 +1,22 @@
+{
+	"name": "lerni/editablemailchimpsubscriptionfield",
+	"description": "A editable FormField for UserForms that'll let you add Subscribers to a Mailchimp list per API with groups",
+	"type": "silverstripe-module",
+	"keywords": ["silverstripe", "mailchimp", "userforms"],
+	"license": "BSD-3-Clause",
+	"authors": [
+		{
+			"name": "Lukas Erni",
+			"email": "le@kraftausdruck.ch",
+			"homepage": "https://github.com/lerni/EditableMailchimpSubscriptionField"
+		}
+	],
+	"require": {
+		"drewm/mailchimp-api": "dev-master",
+		"silverstripe/userforms": "dev-master",
+		"silverstripe/framework": ">=3.1"
+	},
+	"extra": {
+		"installer-name": "editablemailchimpsubscriptionfield"
+	}
+}
