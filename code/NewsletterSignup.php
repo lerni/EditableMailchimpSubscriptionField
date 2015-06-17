@@ -10,7 +10,7 @@ class NewsletterSignup extends EditableFormField {
 	static $plural_name = 'Newsletter Signup Fields';
 
 	public function Icon()  {
-		return MOD_DOAP_DIR . '/images/' . strtolower($this->class) . '.png';	
+		return MOD_DOAP_DIR . '/images/editablemailchimpsubscriptionfield.png';
 	}
 
 	// secret

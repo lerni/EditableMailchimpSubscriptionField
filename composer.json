@@ -12,9 +12,11 @@
 		}
 	],
 	"require": {
-		"drewm/mailchimp-api": "dev-master",
 		"silverstripe/userforms": "dev-master",
-		"silverstripe/framework": ">=3.1"
+		"drewm/mailchimp-api": "dev-master"
+	},
+	"autoload": {
+		"psr-0": { "\\Drewm\\MailChimp": "vendor/drewm" }
 	},
 	"extra": {
 		"installer-name": "editablemailchimpsubscriptionfield"
