@@ -9,7 +9,7 @@ The easiest way is to use [composer](https://getcomposer.org/):
 
     composer require lerni/editablemailchimpsubscriptionfield
 
-If you just clone/download this repository make shure you have the requierd packages also installed.
+If you just clone/download this repository make sure you have the required packages also installed.
 
     "require": {
         "silverstripe/userforms": "dev-master",
