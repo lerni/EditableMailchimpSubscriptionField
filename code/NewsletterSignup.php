@@ -5,6 +5,9 @@
  * 
  * @package userforms
  */
+
+use \Drewm\MailChimp;
+
 class NewsletterSignup extends EditableFormField {
 	static $singular_name = 'Newsletter Signup Field';
 	static $plural_name = 'Newsletter Signup Fields';
@@ -23,7 +26,7 @@ class NewsletterSignup extends EditableFormField {
 	}
 
 	public function getMC($item) {
-		$MailChimp = new \drewm\MailChimp($this->get_api_key());
+		$MailChimp = new MailChimp($this->get_api_key());
 
 		$lists = $MailChimp->call('lists/list', array());
 		if($lists) {
@@ -112,7 +115,7 @@ class NewsletterSignup extends EditableFormField {
 		$value = (isset($data[$this->Name])) ? $data[$this->Name] : false;
 		$list = $this->getMC('lists');
 		if($value) {
-			$MailChimp = new \drewm\MailChimp($this->get_api_key());
+			$MailChimp = new MailChimp($this->get_api_key());
 			$result = $MailChimp->call('lists/subscribe', array(
 				'id' => $list['id'],
 				'email' => array('email' => $data[$map['EMAIL']['name']]),
