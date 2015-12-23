@@ -13,7 +13,7 @@
 	],
 	"require": {
 		"silverstripe/userforms": "~2.0",
-		"drewm/mailchimp-api": "dev-master"
+		"drewm/mailchimp-api": "master"
 	},
 	"extra": {
 		"installer-name": "editablemailchimpsubscriptionfield"
