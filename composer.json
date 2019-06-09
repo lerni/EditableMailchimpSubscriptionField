@@ -1,21 +1,25 @@
 {
-	"name": "lerni/editablemailchimpsubscriptionfield",
-	"description": "A Field for UserForms (EditableFormField) that'll let you add Subscribers to a MailChimp list with groups.",
-	"type": "silverstripe-module",
-	"keywords": ["silverstripe", "mailchimp", "userforms"],
-	"license": "BSD-3-Clause",
-	"authors": [
-		{
-			"name": "Lukas Erni",
-			"email": "le@kraftausdruck.ch",
-			"homepage": "https://github.com/lerni/EditableMailchimpSubscriptionField"
-		}
-	],
-	"require": {
-		"silverstripe/userforms": "~2.0",
-		"drewm/mailchimp-api": "master"
-	},
-	"extra": {
-		"installer-name": "editablemailchimpsubscriptionfield"
-	}
+  "name": "asecondwill/mailchimp-subscription-field",
+  "description": "A field for Silverstripe Userforms to send submissions to Mailchimp Lists.",
+  "type": "silverstripe-module",
+  "homepage": "http://github.com/asecondwill/mailchimp-subscription-field",
+  "keywords": ["silverstripe", "mailchimp", "marketing"],
+  "license": "BSD-3-Clause",
+  "authors": [
+    {"name": "Will Barker","email": "will@kindleman.com.au"}
+  ],
+  "support": {
+    "issues": "http://github.com/asecondwill/mailchimp-subscription-field/issues"
+  },
+  "require": {
+    "silverstripe/cms": "~3.5",
+    "silverstripe/framework": "~3.5",
+    "drewm/mailchimp-api": "master"
+  },
+  "extra": {
+    "installer-name": "mailchimp-subscription-field",
+    "screenshots": [
+      "https://github.com/asecondwill/mailchimp-subscription-field/blob/master/mailchimp-settings.png"
+    ]
+  }
 }

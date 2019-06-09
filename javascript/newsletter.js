@@ -1,9 +1,10 @@
 (function($) {
-	$checkboxes = $('.newsletter-group .fieldgroup .fieldgroup-field:eq(1)');
+	$checkboxes = $('.newsletter-group');
 	if (!$('.newsletter-toggle').attr("checked")) {
 		$checkboxes.hide();
 	}
 	$('.newsletter-toggle').change(function () {
+		console.log($(this).attr("checked"))
 		if ($(this).attr("checked")) {
 			$checkboxes.slideDown();
 		} else {
